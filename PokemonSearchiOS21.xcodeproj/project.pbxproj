@@ -7,17 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47450165214AD0AC003B35CF /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47450164214AD0AC003B35CF /* Pokemon.swift */; };
+		47450167214AD9D9003B35CF /* PokemonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47450166214AD9D9003B35CF /* PokemonController.swift */; };
+		47450169214AFDDC003B35CF /* PokemonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47450168214AFDDC003B35CF /* PokemonViewController.swift */; };
 		47D2C0BF214AC76A00EFB9B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D2C0BE214AC76A00EFB9B2 /* AppDelegate.swift */; };
-		47D2C0C1214AC76A00EFB9B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D2C0C0214AC76A00EFB9B2 /* ViewController.swift */; };
 		47D2C0C4214AC76A00EFB9B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47D2C0C2214AC76A00EFB9B2 /* Main.storyboard */; };
 		47D2C0C6214AC76C00EFB9B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47D2C0C5214AC76C00EFB9B2 /* Assets.xcassets */; };
 		47D2C0C9214AC76C00EFB9B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47D2C0C7214AC76C00EFB9B2 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		47450164214AD0AC003B35CF /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		47450166214AD9D9003B35CF /* PokemonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonController.swift; sourceTree = "<group>"; };
+		47450168214AFDDC003B35CF /* PokemonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonViewController.swift; sourceTree = "<group>"; };
 		47D2C0BB214AC76A00EFB9B2 /* PokemonSearchiOS21.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokemonSearchiOS21.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47D2C0BE214AC76A00EFB9B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		47D2C0C0214AC76A00EFB9B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		47D2C0C3214AC76A00EFB9B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		47D2C0C5214AC76C00EFB9B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47D2C0C8214AC76C00EFB9B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,9 +39,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4745015E214ACB19003B35CF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4745015F214ACB2D003B35CF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				47450168214AFDDC003B35CF /* PokemonViewController.swift */,
+				47450160214ACB4E003B35CF /* MdelController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		47450160214ACB4E003B35CF /* MdelController */ = {
+			isa = PBXGroup;
+			children = (
+				47450166214AD9D9003B35CF /* PokemonController.swift */,
+			);
+			path = MdelController;
+			sourceTree = "<group>";
+		};
+		47450161214ACB70003B35CF /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				47D2C0C2214AC76A00EFB9B2 /* Main.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		47450162214ACB8E003B35CF /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				47D2C0BE214AC76A00EFB9B2 /* AppDelegate.swift */,
+				47D2C0C5214AC76C00EFB9B2 /* Assets.xcassets */,
+				47D2C0C7214AC76C00EFB9B2 /* LaunchScreen.storyboard */,
+				47D2C0CA214AC76C00EFB9B2 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		47450163214AD08A003B35CF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				47450164214AD0AC003B35CF /* Pokemon.swift */,
+			);
+			name = Model;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		47D2C0B2214AC76A00EFB9B2 = {
 			isa = PBXGroup;
 			children = (
+				47450161214ACB70003B35CF /* UI */,
 				47D2C0BD214AC76A00EFB9B2 /* PokemonSearchiOS21 */,
 				47D2C0BC214AC76A00EFB9B2 /* Products */,
 			);
@@ -54,12 +111,10 @@
 		47D2C0BD214AC76A00EFB9B2 /* PokemonSearchiOS21 */ = {
 			isa = PBXGroup;
 			children = (
-				47D2C0BE214AC76A00EFB9B2 /* AppDelegate.swift */,
-				47D2C0C0214AC76A00EFB9B2 /* ViewController.swift */,
-				47D2C0C2214AC76A00EFB9B2 /* Main.storyboard */,
-				47D2C0C5214AC76C00EFB9B2 /* Assets.xcassets */,
-				47D2C0C7214AC76C00EFB9B2 /* LaunchScreen.storyboard */,
-				47D2C0CA214AC76C00EFB9B2 /* Info.plist */,
+				47450163214AD08A003B35CF /* Model */,
+				4745015F214ACB2D003B35CF /* Controllers */,
+				4745015E214ACB19003B35CF /* View */,
+				47450162214ACB8E003B35CF /* SupportingFiles */,
 			);
 			path = PokemonSearchiOS21;
 			sourceTree = "<group>";
@@ -135,8 +190,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47D2C0C1214AC76A00EFB9B2 /* ViewController.swift in Sources */,
 				47D2C0BF214AC76A00EFB9B2 /* AppDelegate.swift in Sources */,
+				47450165214AD0AC003B35CF /* Pokemon.swift in Sources */,
+				47450169214AFDDC003B35CF /* PokemonViewController.swift in Sources */,
+				47450167214AD9D9003B35CF /* PokemonController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +339,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L7AYJDAX2C;
-				INFOPLIST_FILE = PokemonSearchiOS21/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PokemonSearchiOS21/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +357,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L7AYJDAX2C;
-				INFOPLIST_FILE = PokemonSearchiOS21/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PokemonSearchiOS21/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
